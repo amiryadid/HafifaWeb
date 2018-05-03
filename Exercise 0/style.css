@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#mainTable {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#subTable{
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+    overflow-y: auto;
+}
+
+#subTable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
