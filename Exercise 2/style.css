@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#titleBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: #34b5fa;
+}
+
+.mailLogo {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 80px;
+}
+
+.mailTitle {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 64px;
+    color: white;
+}
+
+#navbar {
+    background-color: #242021;
+    position: absolute;
+    display: flex;
+    top: 100px;
+    width: 200px;
+    bottom: 0;
+    justify-content: center;
+}
+
+.navbarMenu {
+    flex-basis: fit-content;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    align-items: center;
+    padding: 0;
+}
+
+.navbarOption {
+    list-style-type: none;
+    background-color: #82746c;
+    border-radius: 3px;
+    width: 100%;
+    flex-basis: 30px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.navbarOption.active {
+    background-color: #f3771a;
+}
+
+.navbarOption a {
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
+
+.mailWrite {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: orangered;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+#mailboxContent {
+    background-color: #555555;
+    left: 200px;
+    top: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.mailItem {
+    border: solid 1px black;
+    width: 900px;
+    height: 75px;
+    margin: 5px auto;
+    background-color: #f6e3e7;
+    position: relative;
+}
+
+.mailItem * {
+    font-family: Arial;
+    position: absolute;
+    display: inline-block;
+
+}
+
+.mailHeader {
+    width: 150px;
+    border-right: black 1px solid;
+    padding: 3px;
+    top: 5%;
+    bottom: 5%;
+}
+
+.mailBody {
+    left: 165px;
+    right: 0;
+    height: inherit;
+    top: 5%;
+    bottom: 5%;
+}
+
+.mailTopic {
+    font-size: 24px;
+    height: 70%;
+}
+
+.mailFrom {
+    font-weight: bold;
+    font-size: 18px;
+    top: 70%;
+    width: 35%;
+}
+
+.mailSender {
+    font-size: 18px;
+    top: 70%;
+    left: 35%;
+}
+
+.mailContent {
+    right: 25px;
+}
+
+.mailIcon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 5%;
+    right: 0;
+}
