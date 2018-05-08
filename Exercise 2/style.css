@@ -1,16 +1,27 @@
 html, body {
+    width: 100%;
     height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.websiteBody {
+    flex: 1 0;
+    display: flex;
+    flex-direction: row;
 }
 
 #titleBar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: absolute;
     height: 100px;
     width: 100%;
+    flex: none;
     background-color: #34b5fa;
+    align-self: stretch;
 }
 
 .mailLogo {
@@ -28,12 +39,9 @@ html, body {
 
 #navbar {
     background-color: #242021;
-    position: absolute;
     display: flex;
-    top: 100px;
-    width: 200px;
-    bottom: 0;
     justify-content: center;
+    flex: 0 0 200px;
 }
 
 .navbarMenu {
@@ -51,7 +59,7 @@ html, body {
     background-color: #82746c;
     border-radius: 3px;
     width: 100%;
-    flex-basis: 30px;
+    min-height: 30px;
     margin: 3px;
     display: flex;
     align-items: center;
@@ -80,72 +88,69 @@ html, body {
 
 #mailboxContent {
     background-color: #555555;
-    left: 200px;
-    top: 100px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
     overflow-y: auto;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.mailItem {
-    border: solid 1px black;
+.mailItemFrame {
     width: 900px;
     height: 75px;
     margin: 5px auto;
-    background-color: #f6e3e7;
-    position: relative;
+    background-color: #f6f0f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mailItem {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .mailItem * {
     font-family: Arial;
-    position: absolute;
-    display: inline-block;
-
 }
 
 .mailHeader {
     width: 150px;
     border-right: black 1px solid;
     padding: 3px;
-    top: 5%;
-    bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mailBody {
-    left: 165px;
-    right: 0;
-    height: inherit;
-    top: 5%;
-    bottom: 5%;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mailTopic {
     font-size: 24px;
     height: 70%;
+    width: 100%;
 }
 
 .mailFrom {
     font-weight: bold;
     font-size: 18px;
-    top: 70%;
     width: 35%;
 }
 
 .mailSender {
     font-size: 18px;
-    top: 70%;
-    left: 35%;
+    width: 65%;
 }
 
 .mailContent {
-    right: 25px;
+    margin-left: 3px;
 }
 
 .mailIcon {
-    position: absolute;
     width: 25px;
     height: 25px;
-    bottom: 5%;
-    right: 0;
+    align-self: flex-end;
 }
